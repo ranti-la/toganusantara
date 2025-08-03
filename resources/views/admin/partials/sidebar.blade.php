@@ -30,6 +30,16 @@
           <span class="nav-link-text ms-1">Tambah Tanaman</span>
         </a>
       </li>
+
+      <li class="nav-item">
+        <form action="{{ route('logout') }}" method="POST" class="form">
+          @csrf
+          <button type="submit" class="nav-link text-dark">
+            <i class="material-symbols-rounded opacity-5">logout</i>
+            <span class="nav-link-text ms-1">Logout</span>
+          </button>
+        </form>
+      </li>
     </ul>
   </div>
   <div class="sidenav-footer position-absolute w-100 bottom-0">
